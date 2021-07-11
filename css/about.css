@@ -1,0 +1,289 @@
+body{
+	background-color: rgb(0, 0, 0, 0.85);
+	color: white
+}
+.containernav{
+	display: flex;
+	justify-content: space-around;
+	background-color: #336699;
+	position:sticky;
+	top: 0;
+	width: 100%;
+	z-index: 1
+}
+
+.contsearch{
+	background-color: #538cc6;
+	border-radius: 20px;
+	width: 80%;
+	text-align: center;
+	padding: 12px;
+	position: relative;
+	margin-top: 10px
+	
+}
+.chercher{
+	height: 30px;
+	display: inline-block;
+	position: relative;
+	margin: 0;
+	width: 80%;
+	border-radius: 20px;
+	top: -31%;
+	left: -4%;
+	padding: 10px;
+	border: none;
+	background-color: #6699cc;
+	box-shadow: 0px 0px 2px 3px #538cc6;
+	border-bottom: 2px solid white
+}
+.chercher:focus{
+	border: none !important;
+}
+.boutbout{
+	position: relative;
+	display: inline-block;
+	right: 0%;
+	top: -31%;
+	width: 10%;
+	height: 70%;
+	border-radius: 100%;
+	border: none;
+	color: white;
+	background-color: #538cc6
+}
+.contpagee{
+	display: flex;
+	text-align: center;
+	flex-wrap: wrap;
+	width: 50%
+}
+.pagee{
+	display: inline-block;
+	padding: 20px;
+	align-content: center;
+	align-items: center;
+	width: 25%;
+	color: white
+	
+}
+
+.contsearchy{
+	width: 30%
+}
+
+.logo{
+	width: 20%;
+	text-align: center;
+	padding: 0px 0px;
+	font-size: 40px;
+	word-break: break-all;
+	color: #ffffb3
+}
+.fa-spoon::before{
+	margin-right: 10px
+}
+
+.pagee:hover{
+	text-decoration: none;
+	color: #ff9966
+}
+.active{
+	 background-color: rgb(10, 15, 15, 0.5)
+}
+
+/*phone navbar*/
+
+@media only screen and (max-width: 612px){
+	.pagee{
+		display:block;
+		padding: 20px;
+		width: auto;
+	}	
+
+	.contpagee{
+		text-align: center;
+		display: block;
+		width: 100%
+		
+	}
+
+	.containernav{
+		display: flex;
+		flex-direction:column-reverse;
+		position: static;
+	}
+	.contsearch{
+		margin-top: 0px
+	}
+
+	.contsearchy{
+		width: 100%
+	}
+
+	.logo{
+		display: block;
+		width: 100%;
+	}
+}
+div.conthist{
+	line-height: 35px;
+	border: double black;
+	border-radius: 15px;
+	margin-top: 20px;
+	text-align: justify;
+	padding: 0px 30px
+}
+.contcond{
+	position: fixed;
+	right: 0px;
+	top: 100px;
+	background-color: red;
+	z-index:1;
+	opacity: 40%
+}
+.contcond:hover{
+	opacity: 100%
+}
+.pol{
+	position: absolute;
+	left:-700px;
+	top: 10px;
+	width: 700px;
+	overflow: scroll;
+
+}
+.po:hover .pol{
+	background-color: pink
+}
+ul.containstitebar{
+	color: rgb(80, 255, 153);
+	font-weight: bold;
+	font-size: 35px;
+	list-style-type: none;
+	line-height: 60px;
+	padding: 0
+
+}
+.sousprinc{
+	color: inherit;
+	font-family: forte;
+	word-wrap: break-word;
+	
+
+}
+.sousprinc:hover{
+	text-decoration: none;
+	color: yellow
+}
+ul.stitle{
+	color: white;
+	font-size: 20px;
+	font-weight: normal;
+}
+.insoutitls{
+	display: block;
+	color: inherit;
+}
+.insoutitls:hover{
+	color: lime;
+	text-decoration: none;
+}
+.contrule{
+	position: sticky;
+	opacity: 40%;
+	width: 350px; 
+	background-color: red;
+	margin-top: 12px;
+	text-align: center;
+
+}
+.contruleright{
+	position: sticky;
+	left: 100%;
+	opacity: 40%; 
+	background-color: red;
+	width: 250px;
+	text-align: center;
+	margin-top: -40px
+
+}
+.contp{
+	display: none
+}
+.contrule:hover .contp{
+	display: block;
+}
+.contruleright:hover .contp{
+	display: block;
+}
+.contrule:hover{
+	position: fixed;
+	text-align: center;
+	opacity: 100%;
+	right: 0%;
+	left: 0%;
+	width: 100%;
+	bottom: 0%;
+	z-index: 1;
+}
+.contruleright:hover{
+	position: fixed;
+	text-align: center;
+	opacity: 100%;
+	left: 0%;
+	right: 0%;
+	width: 100%;
+	bottom: 0%;
+	z-index: 1
+}
+
+.fa::before{
+	margin-right: 7px
+}
+.conthist h1{
+	text-decoration: underline;
+}
+
+@media only screen and (max-width: 612px){
+	.contrule{
+		position: relative;
+		opacity: 100%;
+		left: 0%; 
+		background-color: red;
+		width: auto;
+		margin-top: 12px
+	}
+.contruleright{
+		position: relative;
+		opacity: 100%; 
+		background-color: red;
+		width: auto;
+		left: 0%;
+		margin-top: 0px
+	}
+.contp{
+		display: none
+	}
+.contrule:hover .contp{
+		display: block;
+	}
+.contruleright:hover .contp{
+		display: block;
+	}
+.contrule:hover{
+		text-align: center;
+		opacity: 100%;
+		right: 0%;
+		left: 0%
+	}
+.contruleright:hover{
+		text-align: center;
+		opacity: 100%;
+		right: 0%
+	}
+}
+
+i{
+	word-break: break-all;
+}

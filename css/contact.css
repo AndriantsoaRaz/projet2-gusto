@@ -1,0 +1,219 @@
+/*navbar*/
+.containernav{
+	display: flex;
+	justify-content: space-around;
+	background-color: #336699;
+	position:sticky;
+	top: 0;
+	width: 100%;
+	z-index: 1
+}
+
+.contsearch{
+	background-color: #538cc6;
+	border-radius: 20px;
+	width: 80%;
+	text-align: center;
+	padding: 12px;
+	position: relative;
+	margin-top: 10px
+	
+}
+.chercher{
+	height: 30px;
+	display: inline-block;
+	position: relative;
+	margin: 0;
+	width: 80%;
+	border-radius: 20px;
+	top: -31%;
+	left: -4%;
+	padding: 10px;
+	border: none;
+	background-color: #6699cc;
+	box-shadow: 0px 0px 2px 3px #538cc6;
+	border-bottom: 2px solid white
+}
+.chercher:focus{
+	border: none !important;
+}
+.boutbout{
+	position: relative;
+	display: inline-block;
+	right: 0%;
+	top: -31%;
+	width: 10%;
+	height: 70%;
+	border-radius: 100%;
+	border: none;
+	color: white;
+	background-color: #538cc6
+}
+.contpagee{
+	display: flex;
+	text-align: center;
+	flex-wrap: wrap;
+	width: 50%
+}
+.pagee{
+	display: inline-block;
+	padding: 20px;
+	align-content: center;
+	align-items: center;
+	width: 25%;
+	color: white
+	
+}
+
+.contsearchy{
+	width: 30%
+}
+
+.logo{
+	width: 20%;
+	text-align: center;
+	padding: 0px 0px;
+	font-size: 40px;
+	word-break: break-all;
+	color: #ffffb3
+}
+.fa-spoon::before{
+	margin-right: 10px
+}
+
+.pagee:hover{
+	text-decoration: none;
+	color: #ff9966
+}
+.active{
+	 background-color: rgb(10, 15, 15, 0.5)
+}
+
+/*phone navbar*/
+
+@media only screen and (max-width: 612px){
+	.pagee{
+		display:block;
+		padding: 20px;
+		width: auto;
+	}	
+
+	.contpagee{
+		text-align: center;
+		display: block;
+		width: 100%
+		
+	}
+
+	.containernav{
+		display: flex;
+		flex-direction:column-reverse;
+		position: static;
+	}
+	.contsearch{
+		margin-top: 0px
+	}
+
+	.contsearchy{
+		width: 100%
+	}
+
+	.logo{
+		display: block;
+		width: 100%;
+	}
+}
+
+
+.cont1a{
+	position: relative;
+}
+.indique{
+	text-align: center;
+}
+.contform{
+	line-height: 40px;
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+.inpu1{
+	width: 100%;
+	border-radius: 12px
+}
+.org1{
+	width: 200px;
+}
+.org2{
+	width: 250px ;
+}
+.etimes{
+	text-align: center;
+}
+.mesmes{
+	display: block;
+	margin-top: 12px
+}
+.bouttonsoum{
+	position: relative;
+	display: block;
+	left: 9%;
+	border-radius: 12px;
+	top: 5px;
+	width:150px;
+	height: 50px;
+	background-color: skyblue;
+	color: white;
+	font-weight: bold;
+}
+.immap{
+	width: 100%
+}
+.labnous{
+	text-decoration: underline;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+
+}
+.infnous{
+	margin-left: 10px;
+	font-size: 15px;
+	word-break: break-word;
+}
+.titenous{
+	text-align: center;
+	word-break: break-word
+}
+.contfollow{
+	display: flex;
+	align-items: center;
+	align-content: center;
+	position: relative;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.am{
+	position: relative;
+	width: 15%;
+}
+.res{
+	width: 100%;
+	height: 100%;
+
+}
+.espace{
+	width: 2.4%
+}
+.titegrand{
+	word-break: break-all;
+	text-align: center;
+
+}
+.indique{
+	word-break: break-word
+}
+.am:hover{
+	transform: scale(1.08, 1.08);
+}
